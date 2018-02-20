@@ -1,3 +1,2 @@
-FROM kyma/docker-nginx
-COPY src/ /var/www
-CMD 'nginx'
+FROM httpd:2.4
+COPY ./src/ /usr/local/apache2/htdocs/
