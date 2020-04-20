@@ -1,2 +1,2 @@
-FROM bitnami/apache:latest
-COPY ./src/ /app/
+FROM openbridge/nginx:latest
+COPY ./src/ /usr/share/nginx/html
